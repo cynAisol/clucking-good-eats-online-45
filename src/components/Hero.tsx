@@ -1,3 +1,4 @@
+
 import { ArrowDown, Zap, Star } from 'lucide-react';
 
 const Hero = () => {
@@ -50,29 +51,36 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right side - Image */}
-          <div className="relative">
-            {/* Multiple background circles for funky effect */}
-            <div className="absolute inset-0 bg-black rounded-full transform scale-110 opacity-80 animate-pulse"></div>
-            <div className="absolute inset-0 bg-white rounded-full transform scale-105 opacity-60 animate-ping"></div>
+          {/* Right side - Image with blob background */}
+          <div className="relative flex justify-center items-center">
+            {/* Blob-like background shapes */}
+            <div className="absolute inset-0 flex justify-center items-center">
+              <div className="w-96 h-96 bg-black rounded-[50%_40%_60%_30%] opacity-80 animate-pulse transform rotate-12"></div>
+            </div>
+            <div className="absolute inset-0 flex justify-center items-center">
+              <div className="w-80 h-80 bg-white rounded-[40%_60%_30%_50%] opacity-60 animate-ping transform -rotate-6"></div>
+            </div>
+            <div className="absolute inset-0 flex justify-center items-center">
+              <div className="w-72 h-72 bg-yellow-300 rounded-[60%_30%_50%_40%] opacity-70 animate-bounce transform rotate-3"></div>
+            </div>
             
             {/* Main image container */}
-            <div className="relative z-10 bg-yellow-400 rounded-full p-4 shadow-2xl transform hover:rotate-6 transition-transform duration-500">
+            <div className="relative z-10 transform hover:rotate-6 transition-transform duration-500">
               <img 
-                src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-                alt="Delicious Fried Chicken" 
-                className="w-full h-auto rounded-full object-cover border-8 border-black"
+                src="/lovable-uploads/509b5713-a7a7-4162-b76e-59ee9acb0581.png" 
+                alt="Delicious Chicken Wings" 
+                className="w-80 h-80 object-cover rounded-full border-8 border-black shadow-2xl"
               />
             </div>
 
             {/* Floating elements around the image */}
-            <div className="absolute -top-4 -right-4 bg-black text-yellow-400 p-3 rounded-full font-black text-sm animate-bounce">
+            <div className="absolute -top-4 -right-4 bg-black text-yellow-400 p-3 rounded-full font-black text-sm animate-bounce z-20">
               HOT!
             </div>
-            <div className="absolute -bottom-4 -left-4 bg-white text-black p-3 rounded-full font-black text-sm animate-pulse">
+            <div className="absolute -bottom-4 -left-4 bg-white text-black p-3 rounded-full font-black text-sm animate-pulse z-20">
               FRESH!
             </div>
-            <div className="absolute top-1/2 -right-8 bg-black text-yellow-400 p-2 rounded-full font-black text-xs transform rotate-12">
+            <div className="absolute top-1/2 -right-8 bg-black text-yellow-400 p-2 rounded-full font-black text-xs transform rotate-12 z-20">
               YUM!
             </div>
           </div>
