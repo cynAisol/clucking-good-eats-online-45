@@ -51,25 +51,25 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right side - Image with blob background */}
+          {/* Right side - Image with simple circle backgrounds */}
           <div className="relative flex justify-center items-center">
-            {/* Blob-like background shapes - bigger than the image */}
+            {/* Simple circle background shapes */}
             <div className="absolute inset-0 flex justify-center items-center">
-              <div className="w-[450px] h-[450px] bg-black rounded-[50%_40%_60%_30%] opacity-80 animate-pulse transform rotate-12"></div>
+              <div className="w-[550px] h-[550px] bg-black rounded-full opacity-20"></div>
             </div>
             <div className="absolute inset-0 flex justify-center items-center">
-              <div className="w-[420px] h-[420px] bg-white rounded-[40%_60%_30%_50%] opacity-60 animate-ping transform -rotate-6"></div>
+              <div className="w-[500px] h-[500px] bg-white rounded-full opacity-30"></div>
             </div>
             <div className="absolute inset-0 flex justify-center items-center">
-              <div className="w-[390px] h-[390px] bg-yellow-300 rounded-[60%_30%_50%_40%] opacity-70 animate-bounce transform rotate-3"></div>
+              <div className="w-[450px] h-[450px] bg-yellow-300 rounded-full opacity-40"></div>
             </div>
             
-            {/* Main image container - bigger and full image */}
+            {/* Main image container - much bigger */}
             <div className="relative z-10 transform hover:rotate-6 transition-transform duration-500">
               <img 
-                src="/lovable-uploads/509b5713-a7a7-4162-b76e-59ee9acb0581.png" 
-                alt="Delicious Chicken Wings" 
-                className="w-96 h-96 object-contain shadow-2xl"
+                src="/lovable-uploads/fda970c7-51aa-483a-9b38-a90d43c01e56.png" 
+                alt="Delicious Chicken Wings on Wooden Board" 
+                className="w-[32rem] h-[32rem] object-contain shadow-2xl"
               />
             </div>
 
