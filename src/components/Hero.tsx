@@ -53,23 +53,23 @@ const Hero = () => {
 
           {/* Right side - Image with blob background */}
           <div className="relative flex justify-center items-center">
-            {/* Blob-like background shapes */}
+            {/* Blob-like background shapes - bigger than the image */}
             <div className="absolute inset-0 flex justify-center items-center">
-              <div className="w-96 h-96 bg-black rounded-[50%_40%_60%_30%] opacity-80 animate-pulse transform rotate-12"></div>
+              <div className="w-[450px] h-[450px] bg-black rounded-[50%_40%_60%_30%] opacity-80 animate-pulse transform rotate-12"></div>
             </div>
             <div className="absolute inset-0 flex justify-center items-center">
-              <div className="w-80 h-80 bg-white rounded-[40%_60%_30%_50%] opacity-60 animate-ping transform -rotate-6"></div>
+              <div className="w-[420px] h-[420px] bg-white rounded-[40%_60%_30%_50%] opacity-60 animate-ping transform -rotate-6"></div>
             </div>
             <div className="absolute inset-0 flex justify-center items-center">
-              <div className="w-72 h-72 bg-yellow-300 rounded-[60%_30%_50%_40%] opacity-70 animate-bounce transform rotate-3"></div>
+              <div className="w-[390px] h-[390px] bg-yellow-300 rounded-[60%_30%_50%_40%] opacity-70 animate-bounce transform rotate-3"></div>
             </div>
             
-            {/* Main image container */}
+            {/* Main image container - bigger and full image */}
             <div className="relative z-10 transform hover:rotate-6 transition-transform duration-500">
               <img 
                 src="/lovable-uploads/509b5713-a7a7-4162-b76e-59ee9acb0581.png" 
                 alt="Delicious Chicken Wings" 
-                className="w-80 h-80 object-cover rounded-full border-8 border-black shadow-2xl"
+                className="w-96 h-96 object-contain shadow-2xl"
               />
             </div>
 
@@ -107,7 +107,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         @keyframes scroll {
           0% {
             transform: translateX(0);
